@@ -1,0 +1,38 @@
+meta {
+  name: Get Github Data
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8081/graphql
+  body: json
+  auth: inherit
+}
+
+body:json {
+  query ($repoUrl: String!, $userId: ID!) {
+          repoData(repoUrl: $repoUrl, userId: $userId) {
+              authorName
+              githubUrl
+              contributions
+              commits {
+                  msg
+                  sha
+                  date
+                  files {
+                      fileName
+                      extension
+                      code
+                      additions
+                      deletions
+        }
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

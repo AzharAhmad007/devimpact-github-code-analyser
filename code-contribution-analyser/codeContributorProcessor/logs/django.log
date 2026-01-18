@@ -1,0 +1,169 @@
+{"timestamp": "2025-11-20 12:40:09,102", "level": "INFO", "service": "code-analyser", "message": "Worker started and waiting for jobs."}
+{"timestamp": "2025-11-20 12:40:15,638", "level": "INFO", "service": "code-analyser", "message": "Worker started and waiting for jobs."}
+{"timestamp": "2025-11-20 12:40:15,864", "level": "INFO", "service": "code-analyser", "message": "Worker started and waiting for jobs."}
+{"timestamp": "2025-11-20 12:40:15,875", "level": "INFO", "service": "code-analyser", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-20 12:40:51,506", "level": "INFO", "service": "code-analyser", "message": "Job 3 fetched for processing."}
+{"timestamp": "2025-11-20 12:40:51,513", "level": "INFO", "service": "code-analyser", "message": "Processing job 3 with name 'analysis_code_contributions'."}
+{"timestamp": "2025-11-20 12:40:51,513", "level": "INFO", "service": "code-analyser", "message": "Starting code contribution analysis."}
+{"timestamp": "2025-11-20 12:40:51,513", "level": "INFO", "service": "code-analyser", "message": "Starting full analysis process."}
+{"timestamp": "2025-11-20 12:40:51,516", "level": "INFO", "service": "code-analyser", "message": "Fetching GitHub data for repo: https://github.com/BITSSAP2025AugAPIBP3Sections/APIBP-20234YC-Team-03"}
+{"timestamp": "2025-11-20 12:40:58,790", "level": "INFO", "service": "code-analyser", "message": "GitHub data fetched successfully."}
+{"timestamp": "2025-11-20 12:40:58,790", "level": "INFO", "service": "code-analyser", "message": "Calculating commit statistics for contributors."}
+{"timestamp": "2025-11-20 12:40:58,790", "level": "INFO", "service": "code-analyser", "message": "Statistics computation completed."}
+{"timestamp": "2025-11-20 12:40:58,790", "level": "INFO", "service": "code-analyser", "message": "Initiating chained Gemini summarization workflow."}
+{"timestamp": "2025-11-20 12:40:58,791", "level": "INFO", "service": "code-analyser", "message": "Starting Step 1: Extract contributors."}
+{"timestamp": "2025-11-20 12:40:58,791", "level": "INFO", "service": "code-analyser", "message": "Sending request to Gemini API."}
+{"timestamp": "2025-11-20 12:41:12,722", "level": "INFO", "service": "code-analyser", "message": "{
+  "contributors": [
+    {
+      "name": "priyasahay",
+      "activities": [
+        "Model Definition",
+        "API Definition",
+        "Repository Configuration",
+        "Dependency Management",
+        "Database Configuration",
+        "Documentation Update"
+      ]
+    },
+    {
+      "name": "s-pallavi-02",
+      "activities": [
+        "Model Definition",
+        "Repository Configuration",
+        "Dependency Management",
+        "Database Configuration",
+        "Documentation Update",
+        "Repository Setup",
+        "Application Core Setup",
+        "Test Setup",
+        "Project Definition"
+      ]
+    },
+    {
+      "name": "niranjangowdaj",
+      "activities": [
+        "License Management"
+      ]
+    },
+    {
+      "name": "kousikdas213",
+      "activities": [
+        "API Definition"
+      ]
+    },
+    {
+      "name": "kousikdassap",
+      "activities": [
+        "Repository Setup",
+        "Dependency Management",
+        "Application Core Setup",
+        "Test Setup",
+        "Repository Configuration"
+      ]
+    }
+  ]
+}"}
+{"timestamp": "2025-11-20 12:41:12,726", "level": "INFO", "service": "code-analyser", "message": "Step 1 completed: Contributors extracted successfully."}
+{"timestamp": "2025-11-20 12:41:12,726", "level": "INFO", "service": "code-analyser", "message": "Starting Step 2: Analyze contributor impact."}
+{"timestamp": "2025-11-20 12:41:12,726", "level": "INFO", "service": "code-analyser", "message": "Sending request to Gemini API."}
+{"timestamp": "2025-11-20 12:41:17,118", "level": "INFO", "service": "code-analyser", "message": "{
+  "contributors": [
+    {
+      "name": "priyasahay",
+      "impact_summary": "Drove core application logic and data modeling, defined API interfaces, and handled essential project configuration and documentation."
+    },
+    {
+      "name": "s-pallavi-02",
+      "impact_summary": "Spearheaded the initial project setup, defined the core application structure, set up testing, contributed to data modeling, and managed foundational configurations."
+    },
+    {
+      "name": "niranjangowdaj",
+      "impact_summary": "Managed project licensing to ensure legal compliance."
+    },
+    {
+      "name": "kousikdas213",
+      "impact_summary": "Contributed to defining the project's API interfaces."
+    },
+    {
+      "name": "kousikdassap",
+      "impact_summary": "Established the repository, managed dependencies, set up the application core, and configured testing infrastructure."
+    }
+  ]
+}"}
+{"timestamp": "2025-11-20 12:41:17,120", "level": "INFO", "service": "code-analyser", "message": "Step 2 completed: Contributor impact analysis successful."}
+{"timestamp": "2025-11-20 12:41:17,121", "level": "INFO", "service": "code-analyser", "message": "Starting Step 3: Assign contribution percentages."}
+{"timestamp": "2025-11-20 12:41:17,121", "level": "INFO", "service": "code-analyser", "message": "Sending request to Gemini API."}
+{"timestamp": "2025-11-20 12:41:23,751", "level": "INFO", "service": "code-analyser", "message": "{
+  "contributors": [
+    {
+      "name": "priyasahay",
+      "contribution_percentage": 30,
+      "impact_summary": "Drove core application logic and data modeling, defined API interfaces, and handled essential project configuration and documentation."
+    },
+    {
+      "name": "s-pallavi-02",
+      "contribution_percentage": 30,
+      "impact_summary": "Spearheaded the initial project setup, defined the core application structure, set up testing, contributed to data modeling, and managed foundational configurations."
+    },
+    {
+      "name": "niranjangowdaj",
+      "contribution_percentage": 5,
+      "impact_summary": "Managed project licensing to ensure legal compliance."
+    },
+    {
+      "name": "kousikdas213",
+      "contribution_percentage": 10,
+      "impact_summary": "Contributed to defining the project's API interfaces."
+    },
+    {
+      "name": "kousikdassap",
+      "contribution_percentage": 25,
+      "impact_summary": "Established the repository, managed dependencies, set up the application core, and configured testing infrastructure."
+    }
+  ]
+}"}
+{"timestamp": "2025-11-20 12:41:23,753", "level": "INFO", "service": "code-analyser", "message": "Step 3 completed: Percentages assigned successfully."}
+{"timestamp": "2025-11-20 12:41:23,753", "level": "INFO", "service": "code-analyser", "message": "Starting Step 4: Generate final summary."}
+{"timestamp": "2025-11-20 12:41:23,754", "level": "INFO", "service": "code-analyser", "message": "Sending request to Gemini API."}
+{"timestamp": "2025-11-20 12:41:35,521", "level": "INFO", "service": "code-analyser", "message": "{"contributors": [
+    {
+      "name": "priyasahay",
+      "contribution_percentage": 30,
+      "impact_summary": "Drove core application logic and data modeling, defined API interfaces, and handled essential project configuration and documentation."
+    },
+    {
+      "name": "s-pallavi-02",
+      "contribution_percentage": 30,
+      "impact_summary": "Spearheaded the initial project setup, defined the core application structure, set up testing, contributed to data modeling, and managed foundational configurations."
+    },
+    {
+      "name": "niranjangowdaj",
+      "contribution_percentage": 5,
+      "impact_summary": "Managed project licensing to ensure legal compliance."
+    },
+    {
+      "name": "kousikdas213",
+      "contribution_percentage": 10,
+      "impact_summary": "Contributed to defining the project's API interfaces."
+    },
+    {
+      "name": "kousikdassap",
+      "contribution_percentage": 25,
+      "impact_summary": "Established the repository, managed dependencies, set up the application core, and configured testing infrastructure."
+    }
+  ],
+  "overall_summary": "DwellIn is a Spring Boot (Java) application designed for a home-rental platform, providing distinctive lodgings with a homey feel. The project utilizes MySQL/PostgreSQL for data storage and offers both REST and GraphQL APIs, documented via Swagger/OpenAPI. Key functionalities include User, Property, and Booking Management, along with Reviews & Ratings and an Admin Panel. The team collaboratively established the foundational repository, configured the build and testing infrastructure, developed the core data models, and defined the API specifications, laying a robust groundwork for the platform."
+}"}
+{"timestamp": "2025-11-20 12:41:35,524", "level": "INFO", "service": "code-analyser", "message": "Step 4 completed: Final summary generated successfully."}
+{"timestamp": "2025-11-20 12:41:35,524", "level": "INFO", "service": "code-analyser", "message": "Workflow completed successfully."}
+{"timestamp": "2025-11-20 12:41:35,537", "level": "INFO", "service": "code-analyser", "message": "Analysis data saved for ID 3."}
+{"timestamp": "2025-11-20 12:41:39,137", "level": "INFO", "service": "code-analyser", "message": "Callback POST successful for analysis ID 3."}
+{"timestamp": "2025-11-20 12:41:39,138", "level": "INFO", "service": "code-analyser", "message": "Code contribution analysis completed successfully."}
+{"timestamp": "2025-11-20 12:41:39,143", "level": "INFO", "service": "code-analyser", "message": "Job 3 completed successfully."}
+{"timestamp": "2025-11-22 04:36:46,058", "level": "INFO", "service": "code-analyser", "message": "Worker started and waiting for jobs."}
+{"timestamp": "2025-11-22 04:36:58,492", "level": "INFO", "service": "code-analyser", "message": "Worker started and waiting for jobs."}
+{"timestamp": "2025-11-22 04:36:58,783", "level": "INFO", "service": "code-analyser", "message": "Worker started and waiting for jobs."}
+{"timestamp": "2025-11-22 04:36:58,794", "level": "INFO", "service": "code-analyser", "message": "Watching for file changes with StatReloader"}
+{"timestamp": "2025-11-22 05:07:37,397", "level": "WARNING", "service": "code-analyser", "message": "Not Found: /"}
+{"timestamp": "2025-11-22 05:07:37,537", "level": "WARNING", "service": "code-analyser", "message": "Not Found: /favicon.ico"}
